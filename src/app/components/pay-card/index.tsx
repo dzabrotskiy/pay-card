@@ -1,4 +1,4 @@
-import React, {FC, ReactElement, CSSProperties} from 'react'
+import React, {FC, ReactElement, CSSProperties, MouseEvent} from 'react'
 import css from './index.css'
 import {useSpring, animated} from 'react-spring'
 
@@ -33,13 +33,9 @@ export const PayCard: FC<PayCardProps> = (
   }
   return (
     <animated.div
-      onMouseMove={({
-        clientX: x,
-        clientY: y,
-      }: {
-        clientX: number
-        clientY: number
-      }) => setCardProps({xys: calculateRotateDegrees(x, y)})}
+      onMouseMove={({clientX: x, clientY: y}: MouseEvent) =>
+        setCardProps({xys: calculateRotateDegrees(x, y)})
+      }
       onMouseLeave={() => setCardProps({xys: [0, 0, 1]})}
       className={css.Card}
       style={style}>
