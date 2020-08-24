@@ -1,4 +1,4 @@
-import React, {FC, ReactElement} from 'react'
+import React, {FC, ReactElement, CSSProperties} from 'react'
 import css from './index.css'
 import {useSpring, animated} from 'react-spring'
 
@@ -28,7 +28,7 @@ export const PayCard: FC<PayCardProps> = (
     xys: [0, 0, 1],
     config: {mass: 7, tension: 350, friction: 35},
   }))
-  const style: any = {
+  const style: CSSProperties = {
     transform: cardProps.xys.interpolate(getTransformValue as any),
   }
   return (
