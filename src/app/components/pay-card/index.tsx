@@ -40,7 +40,7 @@ export const PayCard: FC<PayCardProps> = (
   return (
     <animated.div
       onClick={() => setFlipped((state) => !state)}
-      style={{transform: transform}}>
+      style={{transform: transform.interpolate((t) => `${t}`)}}>
       <animated.div
         onMouseMove={({clientX: x, clientY: y}: MouseEvent) =>
           setCardProps({xys: calculateRotateDegrees(x, y)})
