@@ -10,7 +10,7 @@ clean() {
 }
 
 start() {
-  npm i --no-package-lock
+  i
   npm run start
 }
 

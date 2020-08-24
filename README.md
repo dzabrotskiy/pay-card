@@ -3,6 +3,6 @@
 ```shell script
     git clone https://github.com/dzabrotskiy/pay-card.git
     cd pay-card
-    npm install
-    npm start
+    sh run.sh start
 ```
+* open [localhost:3000](localhost:3000)
