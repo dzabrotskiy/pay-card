@@ -1,0 +1,19 @@
+{
+  "name": "pay-card",
+  "version": "0.1.0",
+  "description": "pay card form example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzabrotskiy/pay-card.git"
+  },
+  "author": "Daniil Zabrotskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzabrotskiy/pay-card/issues"
+  },
+  "homepage": "https://github.com/dzabrotskiy/pay-card#readme"
+}
